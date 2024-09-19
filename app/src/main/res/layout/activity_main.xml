@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,27 +8,105 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/screen_20_9"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:clipToOutline="true">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+        <View
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#38A3A5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+        <TextView
+            android:id="@+id/mis_pel_cul"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="106dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/mis_pel_cul"
+            android:textAppearance="@style/mis_pel_cul"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header" />
 
-    <include layout="@layout/content_main" />
+        <View
+            android:id="@+id/coleccion"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/coleccion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mis_pel_cul" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <Button
+            android:id="@+id/button_ingreso"
+            android:layout_width="205dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="154dp"
+            android:background="@drawable/button_rounded"
+            android:elevation="4dp"
+            android:text="@string/ingresar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coleccion" />
 
+        <Button
+            android:id="@+id/button_registro"
+            android:layout_width="205dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="154dp"
+            android:background="@drawable/button_rounded"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coleccion" />
+
+        <TextView
+            android:id="@+id/ingresar"
+            android:layout_width="205dp"
+            android:layout_height="66dp"
+            android:background="@drawable/ingresar_background"
+            android:gravity="center"
+            android:text="@string/ingresar"
+            android:textAppearance="@style/ingresar"
+            app:layout_constraintBottom_toBottomOf="@id/button_ingreso"
+            app:layout_constraintEnd_toEndOf="@id/button_ingreso"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/button_ingreso"
+            app:layout_constraintTop_toTopOf="@id/button_ingreso"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/registrar"
+            android:layout_width="205dp"
+            android:layout_height="66dp"
+            android:background="@drawable/registrar_background"
+            android:gravity="center"
+            android:text="@string/registrar"
+            android:textAppearance="@style/ingresar"
+            app:layout_constraintBottom_toBottomOf="@id/button_registro"
+            app:layout_constraintEnd_toEndOf="@id/button_registro"
+            app:layout_constraintStart_toStartOf="@id/button_registro"
+            app:layout_constraintTop_toTopOf="@id/button_registro" />
+
+        <TextView
+            android:id="@+id/gestor_de_c"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#22577A"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/footer"
+            android:textAppearance="@style/footer_appearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
