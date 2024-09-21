@@ -25,13 +25,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/mis_pel_cul"
+            android:id="@+id/mis_peliculas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="106dp"
             android:gravity="center_horizontal|top"
             android:text="@string/mis_pel_cul"
-            android:textAppearance="@style/mis_pel_cul"
+            android:textAppearance="@style/mis_peliculas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/header" />
@@ -44,7 +44,7 @@
             android:background="@drawable/coleccion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mis_pel_cul" />
+            app:layout_constraintTop_toBottomOf="@id/mis_peliculas" />
 
         <Button
             android:id="@+id/button_ingreso"
