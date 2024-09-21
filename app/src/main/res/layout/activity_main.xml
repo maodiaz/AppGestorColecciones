@@ -95,7 +95,7 @@
             app:layout_constraintTop_toTopOf="@id/button_registro" />
 
         <TextView
-            android:id="@+id/gestor_de_c"
+            android:id="@+id/footer"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:background="#22577A"
