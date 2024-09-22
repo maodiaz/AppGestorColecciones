@@ -1,10 +1,13 @@
 package com.example.appgestorcolecciones
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+
 
 class MiPerfilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +18,12 @@ class MiPerfilActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val botonVolver = findViewById<View>(R.id.caja_volverhome)
+        botonVolver.setOnClickListener {
+            val intent = Intent(this, IngresoActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -5,6 +5,138 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MiPerfilActivity">
+    tools:context=".MiPerfilActivity"
+    android:background="#91eae4">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#38A3A5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Bienvenido_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/mi_perfil"
+        android:textAppearance="@style/Bienvenido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/businessperson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/nombre"
+        android:textAppearance="@style/mi_perfil_texto"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/edad"
+        android:textAppearance="@style/mi_perfil_texto"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <TextView
+        android:id="@+id/profesionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/profesion"
+        android:textAppearance="@style/mi_perfil_texto"
+        app:layout_constraintTop_toBottomOf="@+id/ageTextView"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/ciudad"
+        android:textAppearance="@style/mi_perfil_texto"
+        app:layout_constraintTop_toBottomOf="@+id/profesionTextView"
+        tools:layout_editor_absoluteX="157dp" />
+
+    <View
+        android:id="@+id/caja_volverhome"
+        android:layout_width="291dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/botones_derecha"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/volver_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/volver_home"
+        android:textAppearance="@style/botones_ingreso"
+        app:layout_constraintBottom_toBottomOf="@+id/caja_volverhome"
+        app:layout_constraintStart_toStartOf="@+id/caja_volverhome"
+        app:layout_constraintTop_toTopOf="@+id/caja_volverhome" />
+
+    <View
+        android:id="@+id/logo_volverhome"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/volver_home"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/caja_volverhome"
+        app:layout_constraintStart_toStartOf="@+id/caja_volverhome"
+        app:layout_constraintTop_toTopOf="@+id/caja_volverhome"/>
+
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#22577A"
+        android:gravity="center"
+        android:text="@string/footer"
+        android:textAppearance="@style/footer_appearance"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,5 +10,10 @@
     <string name="crear_coleccion">Crear Colección</string>
     <string name="mis_colecciones">Crear Colección</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="nombre">Nombre: Pedro Pérez</string>
+    <string name="edad">Edad: 45 años</string>
+    <string name="profesion">Profesion: Estudiante</string>
+    <string name="ciudad">Ciudad: Bogotá</string>
+    <string name="volver_home">Volver al Home</string>
 
 </resources>
