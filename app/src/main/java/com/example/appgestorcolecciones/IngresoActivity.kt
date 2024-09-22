@@ -21,11 +21,5 @@ class IngresoActivity : AppCompatActivity() {
             val intent = Intent(this, CrearColeccionActivity::class.java)
             startActivity(intent)
         }
-
-        val botonMisColecciones = findViewById<View>(R.id.caja_miscolecciones)
-        botonMisColecciones.setOnClickListener {
-            val intent = Intent(this, MisColeccionesActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
