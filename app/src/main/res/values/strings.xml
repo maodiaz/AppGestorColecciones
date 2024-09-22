@@ -8,12 +8,15 @@
     <string name="bienvenido">Bienvenido</string>
     <string name="mi_perfil">Mi Perfil</string>
     <string name="crear_coleccion">Crear Colección</string>
-    <string name="mis_colecciones">Crear Colección</string>
+    <string name="mis_colecciones">Mis Colecciones</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
     <string name="nombre">Nombre: Pedro Pérez</string>
     <string name="edad">Edad: 45 años</string>
     <string name="profesion">Profesion: Estudiante</string>
     <string name="ciudad">Ciudad: Bogotá</string>
     <string name="volver_home">Volver al Home</string>
+    <string name="nombre_coleccion">Escribe el nombre de tu colección</string>
+    <string name="descripcion_coleccion">Escribe la descripción de tu colección</string>
+    <string name="guardar_coleccion">Guardar Colección</string>
 
 </resources>

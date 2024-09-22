@@ -86,7 +86,7 @@
         app:layout_constraintTop_toTopOf="@+id/caja_crearcoleccion" />
 
     <View
-        android:id="@+id/caja_mis_colecciones"
+        android:id="@+id/caja_miscolecciones"
         android:layout_width="291dp"
         android:layout_height="44dp"
         android:layout_marginStart="0dp"
@@ -103,9 +103,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/mis_colecciones"
         android:layout_marginStart="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/caja_mis_colecciones"
-        app:layout_constraintStart_toStartOf="@+id/caja_mis_colecciones"
-        app:layout_constraintTop_toTopOf="@+id/caja_mis_colecciones"/>
+        app:layout_constraintBottom_toBottomOf="@+id/caja_miscolecciones"
+        app:layout_constraintStart_toStartOf="@+id/caja_miscolecciones"
+        app:layout_constraintTop_toTopOf="@+id/caja_miscolecciones"/>
 
     <TextView
         android:id="@+id/mis_colecciones"
@@ -114,9 +114,9 @@
         android:layout_marginStart="80dp"
         android:text="@string/mis_colecciones"
         android:textAppearance="@style/botones_ingreso"
-        app:layout_constraintBottom_toBottomOf="@+id/caja_mis_colecciones"
-        app:layout_constraintStart_toStartOf="@+id/caja_mis_colecciones"
-        app:layout_constraintTop_toTopOf="@+id/caja_mis_colecciones" />
+        app:layout_constraintBottom_toBottomOf="@+id/caja_miscolecciones"
+        app:layout_constraintStart_toStartOf="@+id/caja_miscolecciones"
+        app:layout_constraintTop_toTopOf="@+id/caja_miscolecciones" />
 
     <View
         android:id="@+id/caja_cerrar_sesion"
