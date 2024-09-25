@@ -27,5 +27,11 @@ class IngresoActivity : AppCompatActivity() {
             val intent = Intent(this, MisColeccionesActivity::class.java)
             startActivity(intent)
         }
+
+        val botonCerrarSesion = findViewById<View>(R.id.caja_cerrar_sesion)
+        botonCerrarSesion.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

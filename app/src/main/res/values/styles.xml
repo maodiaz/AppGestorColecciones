@@ -42,4 +42,22 @@
         <item name="android:textColor">#212121</item>
     </style>
 
+    <style name="titulo_colecciones">
+        <item name="android:fontFamily">@font/outfit_medium</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="describe_colecciones">
+        <item name="android:fontFamily">@font/outfit_medium</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="ingreso_link">
+        <item name="android:fontFamily">@font/outfit_medium</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
 </resources>

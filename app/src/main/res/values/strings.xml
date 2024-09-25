@@ -18,5 +18,8 @@
     <string name="nombre_coleccion">Escribe el nombre de tu colección</string>
     <string name="descripcion_coleccion">Escribe la descripción de tu colección</string>
     <string name="guardar_coleccion">Guardar Colección</string>
+    <string name="peliculas_accion">Películas de acción</string>
+    <string name="describe_coleccion_1">Descripción</string>
+    <string name="ingreso_link">INGRESE A LA COLECCIÓN</string>
 
 </resources>

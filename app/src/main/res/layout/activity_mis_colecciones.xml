@@ -11,143 +11,262 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Aquí puedes agregar tus elementos -->
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/coleccionpelicula"
-            app:layout_constraintTop_toTopOf="parent"
+        <!-- Colección 1 -->
+
+        <View
+            android:id="@+id/image_coleccion"
+            android:layout_width="129.52dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/img_mis_colecciones"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="360dp"
+            android:layout_height="745dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rectangle_1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_default="spread"
-            app:layout_constraintHeight_default="wrap" />
+            app:layout_constraintTop_toBottomOf="@id/image_coleccion" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/img_mis_colecciones"
-            app:layout_constraintTop_toBottomOf="@id/imageView1"
+        <View
+            android:id="@+id/rectangle_titulo"
+            android:layout_width="339dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rectangle_titulo"
+            android:elevation="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_default="spread"
-            app:layout_constraintHeight_default="wrap" />
+            app:layout_constraintTop_toBottomOf="@id/image_coleccion" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/businessperson"
-            app:layout_constraintTop_toBottomOf="@id/imageView2"
+        <TextView
+            android:id="@+id/titulo_colecciones_1"
+            android:layout_width="339dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:elevation="20dp"
+            android:text="@string/peliculas_accion"
+            android:textAppearance="@style/titulo_colecciones"
+            android:gravity="center_horizontal|center_vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_default="spread"
-            app:layout_constraintHeight_default="wrap" />
+            app:layout_constraintTop_toBottomOf="@id/image_coleccion" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/button_rounded"
-            android:text="Guardar"
-            app:layout_constraintTop_toBottomOf="@id/imageView3"
+        <View
+            android:id="@+id/mejores_pel"
+            android:layout_width="340dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            android:background="@drawable/peliculas_accion"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titulo_colecciones_1" />
+
+        <TextView
+            android:id="@+id/descripci_n"
+            android:layout_width="339dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="30dp"
+            android:elevation="30dp"
+            android:text="@string/describe_coleccion_1"
+            android:textAppearance="@style/describe_colecciones"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mejores_pel" />
+
+        <View
+            android:id="@+id/rectangle_descripcion"
+            android:layout_width="339dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_descripcion"
+            android:elevation="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mejores_pel" />
+
+        <View
+            android:id="@+id/rectangle_coleccion"
+            android:layout_width="339dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_coleccion"
+            android:elevation="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rectangle_descripcion"/>
+
+        <TextView
+            android:id="@+id/ingreso_coleccion_1"
+            android:layout_width="339dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:elevation="20dp"
+            android:text="@string/ingreso_link"
+            android:textAppearance="@style/ingreso_link"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rectangle_descripcion" />
+
+        <!-- Colección 2 -->
+
+                <View
+                    android:id="@+id/image_coleccion_duplicate"
+                    android:layout_width="129.52dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="115dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/img_mis_colecciones"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ingreso_coleccion_1" />
+
+                <View
+                    android:id="@+id/rectangle_1_duplicate"
+                    android:layout_width="360dp"
+                    android:layout_height="745dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rectangle_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
+
+                <View
+                    android:id="@+id/rectangle_titulo_duplicate"
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/rectangle_titulo"
+                    android:elevation="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
+
+                <TextView
+                    android:id="@+id/titulo_colecciones_1_duplicate"
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="40dp"
+                    android:elevation="20dp"
+                    android:text="@string/peliculas_accion"
+                    android:textAppearance="@style/titulo_colecciones"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
+
+                <View
+                    android:id="@+id/mejores_pel_duplicate"
+                    android:layout_width="340dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="20dp"
+                    android:background="@drawable/peliculas_accion"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titulo_colecciones_1_duplicate" />
+
+                <TextView
+                    android:id="@+id/descripci_n_duplicate"
+                    android:layout_width="339dp"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="30dp"
+                    android:elevation="30dp"
+                    android:text="@string/describe_coleccion_1"
+                    android:textAppearance="@style/describe_colecciones"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mejores_pel_duplicate" />
+
+                <View
+                    android:id="@+id/rectangle_descripcion_duplicate"
+                    android:layout_width="339dp"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rectangle_descripcion"
+                    android:elevation="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mejores_pel_duplicate" />
+
+                <View
+                    android:id="@+id/rectangle_coleccion_duplicate"
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rectangle_coleccion"
+                    android:elevation="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rectangle_descripcion_duplicate"/>
+
+                <TextView
+                    android:id="@+id/ingreso_coleccion_1_duplicate"
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:elevation="20dp"
+                    android:text="@string/ingreso_link"
+                    android:textAppearance="@style/ingreso_link"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rectangle_descripcion_duplicate" />
+
+        <View
+            android:id="@+id/caja_volverhome"
+            android:layout_width="291dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/botones_derecha"
+            app:layout_constraintTop_toBottomOf="@id/ingreso_coleccion_1_duplicate"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/volver_home"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/cerrar_sesion"
-            android:text="Cerrar Sesión"
-            app:layout_constraintTop_toBottomOf="@id/button1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:layout_marginStart="80dp"
+            android:text="@string/volver_home"
+            android:textAppearance="@style/botones_ingreso"
+            app:layout_constraintBottom_toBottomOf="@+id/caja_volverhome"
+            app:layout_constraintStart_toStartOf="@+id/caja_volverhome"
+            app:layout_constraintTop_toTopOf="@+id/caja_volverhome" />
 
-        <!-- Elementos adicionales para probar el scroll -->
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/coleccionpelicula"
-            app:layout_constraintTop_toBottomOf="@id/button2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_default="spread"
-            app:layout_constraintHeight_default="wrap" />
+        <View
+            android:id="@+id/logo_volverhome"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/volver_home"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/caja_volverhome"
+            app:layout_constraintStart_toStartOf="@+id/caja_volverhome"
+            app:layout_constraintTop_toTopOf="@+id/caja_volverhome"/>
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/img_mis_colecciones"
-            app:layout_constraintTop_toBottomOf="@id/imageView4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_default="spread"
-            app:layout_constraintHeight_default="wrap" />
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/businessperson"
-            app:layout_constraintTop_toBottomOf="@id/imageView5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_default="spread"
-            app:layout_constraintHeight_default="wrap" />
+                android:background="#22577A"
+                android:gravity="center"
+                android:text="@string/footer"
+                android:textAppearance="@style/footer_appearance"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/caja_volverhome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/button_rounded"
-            android:text="Guardar"
-            app:layout_constraintTop_toBottomOf="@id/imageView6"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/cerrar_sesion"
-            android:text="Cerrar Sesión"
-            app:layout_constraintTop_toBottomOf="@id/button3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
