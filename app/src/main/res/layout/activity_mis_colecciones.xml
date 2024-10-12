@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".MisColeccionesActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -68,15 +68,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titulo_colecciones_1" />
 
-        <TextView
-            android:id="@+id/descripci_n"
+        <!-- Reemplazar el TextView de la descripción con un VideoView -->
+        <VideoView
+            android:id="@+id/video_view"
             android:layout_width="339dp"
             android:layout_height="280dp"
             android:layout_marginTop="30dp"
             android:elevation="30dp"
-            android:text="@string/describe_coleccion_1"
-            android:textAppearance="@style/describe_colecciones"
-            android:gravity="center_horizontal|center_vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/mejores_pel" />
@@ -119,109 +117,109 @@
 
         <!-- Colección 2 -->
 
-                <View
-                    android:id="@+id/image_coleccion_duplicate"
-                    android:layout_width="129.52dp"
-                    android:layout_height="120dp"
-                    android:layout_marginStart="115dp"
-                    android:layout_marginTop="40dp"
-                    android:background="@drawable/img_mis_colecciones"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/ingreso_coleccion_1" />
+        <View
+            android:id="@+id/image_coleccion_duplicate"
+            android:layout_width="129.52dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/img_mis_colecciones"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ingreso_coleccion_1" />
 
-                <View
-                    android:id="@+id/rectangle_1_duplicate"
-                    android:layout_width="360dp"
-                    android:layout_height="745dp"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/rectangle_1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
+        <View
+            android:id="@+id/rectangle_1_duplicate"
+            android:layout_width="360dp"
+            android:layout_height="745dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rectangle_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
 
-                <View
-                    android:id="@+id/rectangle_titulo_duplicate"
-                    android:layout_width="339dp"
-                    android:layout_height="70dp"
-                    android:layout_marginTop="40dp"
-                    android:background="@drawable/rectangle_titulo"
-                    android:elevation="10dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
+        <View
+            android:id="@+id/rectangle_titulo_duplicate"
+            android:layout_width="339dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rectangle_titulo"
+            android:elevation="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
 
-                <TextView
-                    android:id="@+id/titulo_colecciones_1_duplicate"
-                    android:layout_width="339dp"
-                    android:layout_height="70dp"
-                    android:layout_marginTop="40dp"
-                    android:elevation="20dp"
-                    android:text="@string/peliculas_accion"
-                    android:textAppearance="@style/titulo_colecciones"
-                    android:gravity="center_horizontal|center_vertical"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
+        <TextView
+            android:id="@+id/titulo_colecciones_1_duplicate"
+            android:layout_width="339dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:elevation="20dp"
+            android:text="@string/peliculas_accion"
+            android:textAppearance="@style/titulo_colecciones"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_coleccion_duplicate" />
 
-                <View
-                    android:id="@+id/mejores_pel_duplicate"
-                    android:layout_width="340dp"
-                    android:layout_height="170dp"
-                    android:layout_marginTop="20dp"
-                    android:elevation="20dp"
-                    android:background="@drawable/peliculas_accion"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/titulo_colecciones_1_duplicate" />
+        <View
+            android:id="@+id/mejores_pel_duplicate"
+            android:layout_width="340dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            android:background="@drawable/peliculas_accion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titulo_colecciones_1_duplicate" />
 
-                <TextView
-                    android:id="@+id/descripci_n_duplicate"
-                    android:layout_width="339dp"
-                    android:layout_height="280dp"
-                    android:layout_marginTop="30dp"
-                    android:elevation="30dp"
-                    android:text="@string/describe_coleccion_1"
-                    android:textAppearance="@style/describe_colecciones"
-                    android:gravity="center_horizontal|center_vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/mejores_pel_duplicate" />
+        <TextView
+            android:id="@+id/descripci_n_duplicate"
+            android:layout_width="339dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="30dp"
+            android:elevation="30dp"
+            android:text="@string/describe_coleccion_1"
+            android:textAppearance="@style/describe_colecciones"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mejores_pel_duplicate" />
 
-                <View
-                    android:id="@+id/rectangle_descripcion_duplicate"
-                    android:layout_width="339dp"
-                    android:layout_height="280dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/rectangle_descripcion"
-                    android:elevation="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/mejores_pel_duplicate" />
+        <View
+            android:id="@+id/rectangle_descripcion_duplicate"
+            android:layout_width="339dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_descripcion"
+            android:elevation="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mejores_pel_duplicate" />
 
-                <View
-                    android:id="@+id/rectangle_coleccion_duplicate"
-                    android:layout_width="339dp"
-                    android:layout_height="70dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/rectangle_coleccion"
-                    android:elevation="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/rectangle_descripcion_duplicate"/>
+        <View
+            android:id="@+id/rectangle_coleccion_duplicate"
+            android:layout_width="339dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_coleccion"
+            android:elevation="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rectangle_descripcion_duplicate"/>
 
-                <TextView
-                    android:id="@+id/ingreso_coleccion_1_duplicate"
-                    android:layout_width="339dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="30dp"
-                    android:elevation="20dp"
-                    android:text="@string/ingreso_link"
-                    android:textAppearance="@style/ingreso_link"
-                    android:gravity="center_horizontal|center_vertical"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/rectangle_descripcion_duplicate" />
+        <TextView
+            android:id="@+id/ingreso_coleccion_1_duplicate"
+            android:layout_width="339dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:elevation="20dp"
+            android:text="@string/ingreso_link"
+            android:textAppearance="@style/ingreso_link"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rectangle_descripcion_duplicate" />
 
         <View
             android:id="@+id/caja_volverhome"
@@ -253,20 +251,18 @@
             app:layout_constraintStart_toStartOf="@+id/caja_volverhome"
             app:layout_constraintTop_toTopOf="@+id/caja_volverhome"/>
 
-            <TextView
-                android:id="@+id/footer"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#22577A"
+            android:gravity="center"
+            android:text="@string/footer"
+            android:textAppearance="@style/footer_appearance"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/caja_volverhome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-                android:background="#22577A"
-                android:gravity="center"
-                android:text="@string/footer"
-                android:textAppearance="@style/footer_appearance"
-                android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/caja_volverhome"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

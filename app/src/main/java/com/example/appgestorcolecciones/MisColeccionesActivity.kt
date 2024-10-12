@@ -1,28 +1,24 @@
 package com.example.appgestorcolecciones
 
-import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.view.View
-import androidx.activity.enableEdgeToEdge
+import android.widget.MediaController
+import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MisColeccionesActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_mis_colecciones)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
-        val botonVolver = findViewById<View>(R.id.caja_volverhome)
-        botonVolver.setOnClickListener {
-            val intent = Intent(this, IngresoActivity::class.java)
-            startActivity(intent)
-        }
+        val videoView: VideoView = findViewById(R.id.video_view)
+        val mediaController = MediaController(this)
+        mediaController.setAnchorView(videoView)
+        val videoUri: Uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.sample_video)
+        videoView.setMediaController(mediaController)
+        videoView.setVideoURI(videoUri)
+        videoView.requestFocus()
+        videoView.start()
     }
 }

@@ -1,5 +1,6 @@
 package com.example.appgestorcolecciones
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -31,13 +32,16 @@ class IngresoActivity : AppCompatActivity() {
 
             when (menuItem.itemId) {
                 R.id.nav_mi_perfil -> {
-                    // Handle "Mi Perfil" action
+                    val intent = Intent(this, MiPerfilActivity::class.java)
+                    startActivity(intent)
                 }
                 R.id.nav_crear_coleccion -> {
-                    // Handle "Crear Colección" action
+                    val intent = Intent(this, CrearColeccionActivity::class.java)
+                    startActivity(intent)
                 }
                 R.id.nav_mis_colecciones -> {
-                    // Handle "Mis Colecciones" action
+                    val intent = Intent(this, MisColeccionesActivity::class.java)
+                    startActivity(intent)
                 }
                 R.id.nav_cerrar_sesion -> {
                     // Handle "Cerrar Sesión" action
