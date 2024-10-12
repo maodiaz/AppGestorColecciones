@@ -1,37 +1,49 @@
 package com.example.appgestorcolecciones
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class IngresoActivity : AppCompatActivity() {
+
+    private lateinit var drawerLayout: DrawerLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ingreso) // Mover esta línea al principio
+        setContentView(R.layout.activity_ingreso)
 
-        val botonMiPerfil= findViewById<View>(R.id.caja_miperfil)
-        botonMiPerfil.setOnClickListener {
-            val intent = Intent(this, MiPerfilActivity::class.java)
-            startActivity(intent)
-        }
+        drawerLayout = findViewById(R.id.drawer_layout)
+        val navigationView: NavigationView = findViewById(R.id.nav_view)
+        val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
 
-        val botonCrearColeccion = findViewById<View>(R.id.caja_crearcoleccion)
-        botonCrearColeccion.setOnClickListener {
-            val intent = Intent(this, CrearColeccionActivity::class.java)
-            startActivity(intent)
-        }
+        setSupportActionBar(toolbar)
+        val toggle = ActionBarDrawerToggle(
+            this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
+        )
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
 
-        val botonMisColecciones = findViewById<View>(R.id.caja_miscolecciones)
-        botonMisColecciones.setOnClickListener {
-            val intent = Intent(this, MisColeccionesActivity::class.java)
-            startActivity(intent)
-        }
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            menuItem.isChecked = true
+            drawerLayout.closeDrawers()
 
-        val botonCerrarSesion = findViewById<View>(R.id.caja_cerrar_sesion)
-        botonCerrarSesion.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            when (menuItem.itemId) {
+                R.id.nav_mi_perfil -> {
+                    // Handle "Mi Perfil" action
+                }
+                R.id.nav_crear_coleccion -> {
+                    // Handle "Crear Colección" action
+                }
+                R.id.nav_mis_colecciones -> {
+                    // Handle "Mis Colecciones" action
+                }
+                R.id.nav_cerrar_sesion -> {
+                    // Handle "Cerrar Sesión" action
+                }
+            }
+            true
         }
     }
 }

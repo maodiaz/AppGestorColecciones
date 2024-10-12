@@ -21,5 +21,6 @@
     <string name="peliculas_accion">Películas de acción</string>
     <string name="describe_coleccion_1">Descripción</string>
     <string name="ingreso_link">INGRESE A LA COLECCIÓN</string>
-
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

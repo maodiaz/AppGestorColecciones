@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_mi_perfil"
+        android:icon="@drawable/mi_perfil"
+        android:title="@string/mi_perfil" />
+    <item
+        android:id="@+id/nav_crear_coleccion"
+        android:icon="@drawable/crear_coleccion"
+        android:title="@string/crear_coleccion" />
+    <item
+        android:id="@+id/nav_mis_colecciones"
+        android:icon="@drawable/mis_colecciones"
+        android:title="@string/mis_colecciones" />
+    <item
+        android:id="@+id/nav_cerrar_sesion"
+        android:icon="@drawable/cerrar_sesion"
+        android:title="@string/cerrar_sesion" />
+</menu>
